@@ -81,7 +81,7 @@ jobs:
         ##########################################################
         # הכנת הקבצים הנוספים שצריך להוסיף לתיקיית ההתקנה
         COMMON_DATA="\
-        --add-data required_files/chrY_GRCh38.txt${{ matrix.sep }}. \
+        --add-data required_files/chrY_GRCh38.txt${{ matrix.sep }}.
         "
 
         # עכשיו פקודת ייצוא קובץ ההתקנה
@@ -183,7 +183,7 @@ jobs:
         ##########################################################
         # הכנת הקבצים הנוספים שצריך להוסיף לתיקיית ההתקנה
         COMMON_DATA="\
-        --add-data required_files/chrY_GRCh38.txt${{ matrix.sep }}. \ 
+        --add-data required_files/chrY_GRCh38.txt${{ matrix.sep }}.
         "
 
         # עכשיו פקודת ייצוא קובץ ההתקנה
