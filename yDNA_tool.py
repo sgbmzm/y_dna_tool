@@ -1,5 +1,15 @@
 import tkinter as tk
 from tkinter import scrolledtext, messagebox
+import sys
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 def load_fasta(filename):
@@ -14,7 +24,7 @@ def load_fasta(filename):
 
 
 # שנה לשם הקובץ שלך
-sequence = load_fasta("chrY_GRCh38.txt")
+sequence = load_fasta(‎resource_path("chrY_GRCh38.txt"))
 
 
 def check_position():
