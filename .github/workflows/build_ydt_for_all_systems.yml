@@ -1,4 +1,4 @@
-name: Build mtdt_simple softwares for all systems
+name: Build ydt_simple softwares for all systems
 
 on:
   workflow_dispatch:
